@@ -128,15 +128,16 @@ nav ul li a:hover {
 
 .banner-container {
   width: 100%;
-  max-width: 670px;
+  max-width: 100%; /* 修改 */
   height: auto;
   margin: 0 auto;
-  padding: 20px; /* 調整 */
+  padding: 20px;
   display: flex;
-  flex-direction: column; /* 垂直 */
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   position: relative;
+  background-color: #FAFAFA;
 }
 
 .banner-content {
@@ -149,7 +150,7 @@ nav ul li a:hover {
   justify-content: center;
   align-items: center;
   text-align: center;
-  gap: 16px; /* 加入間距 */
+  gap: 16px;
   position: relative;
 }
 
@@ -239,12 +240,12 @@ nav ul li a:hover {
 
 .col {
   box-sizing: border-box;
-  display: flex; /* flex布局以便内部内容居中 */
-  justify-content: center; /* 内部内容水平居中 */
-  align-items: center; /* 内部内容垂直居中 */
-  flex: 0 0 calc(50% - 12px); /* 每個col佔50%並留出間隔 */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 0 0 calc(50% - 12px);
   max-width: calc(50% - 12px);
-  margin-bottom: 24px; /* 確保各行之間有間隔 */
+  margin-bottom: 24px;
 }
 
 .pic img {
@@ -289,9 +290,12 @@ nav ul li a:hover {
 
 footer {
   background-color: #f8f8f8;
-  padding: 20px 0;
+  padding: 80px 312px;
   text-align: center;
   border-top: 1px solid #e0e0e0;
+  background-image: url('img/footer-bg-lg.png'); /* 添加背景圖片 */
+  background-size: cover;
+  background-position: center;
 }
 
 .footer-info {
@@ -312,13 +316,54 @@ footer {
   color: #007bff;
 }
 
-.footer-social a {
-  margin: 0 10px;
+.footer-social {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 24px;
 }
 
-.footer-social img {
+.social-button {
+  display: flex;
+  align-items: center;
+  padding: 8px 24px;
+  gap: 8px;
+  width: 306px;
+  height: 72px;
+  background-color: #000;
+  border-radius: 8px 0px 0px 0px;
+  color: #fff;
+  font-size: 16px;
+  text-decoration: none;
+}
+
+.social-button img {
   width: 30px;
   height: 30px;
+}
+
+.list-button {
+  background-color: #000;
+  width: 306px;
+  height: 72px;
+  border-radius: 8px 24px;
+  border-radius: 8px;
+  gap: 8px;
+  font-size: 20px;
+  color: #fff;
+}
+
+.social-button:nth-child(2),
+.social-button:nth-child(3) {
+  background-color: #FFFFFF;
+  border: 1px solid #C1C1C1;
+  width: 306px;
+  height: 72px;
+  border-radius: 8px;
+  padding: 8px 24px;
+  gap: 8px;
+  font-size: 20px;
+  color: #3B3B3B;
 }
 
 /* RWD */
@@ -334,7 +379,7 @@ footer {
   }
 
   .col {
-    flex: 0 0 100%; /* 小於768px時，每個col佔滿整行 */
+    flex: 0 0 100%;
     max-width: 100%;
   }
 
@@ -367,7 +412,23 @@ footer {
   }
 
   .content-block {
-    max-width: 100%;
+    max-width: 235px;
+    text-align: center;
+    gap: 20px;
+  }
+
+  footer {
+    padding: 40px 20px;
+    background-image: url('img/footer-bg-sm.png'); /* 更換背景圖片 */
+  }
+
+  .footer-social {
+    align-items: center;
+  }
+
+  .social-button {
+    width: 100%;
+    max-width: 306px;
   }
 }
 
@@ -385,9 +446,5 @@ footer {
   nav ul {
     display: flex;
     gap: 40px;
-  }
-
-  .mobile_nav {
-    display: none;
   }
 }
