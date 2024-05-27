@@ -430,7 +430,6 @@ footer {
     width: 100%;
     max-width: 306px;
   }
-}
 
 @media screen and (min-width: 768px) {
   .container {
@@ -447,4 +446,3 @@ footer {
     display: flex;
     gap: 40px;
   }
-}
