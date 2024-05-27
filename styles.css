@@ -56,6 +56,7 @@ header {
 
 nav ul {
   display: flex;
+  align-items: center;
   margin-left: auto;
 }
 
@@ -96,6 +97,15 @@ nav ul li a:hover {
   justify-content: center;
 }
 
+.mobile_nav a:hover {
+  color: #007bff;
+}
+
+/* js用的.active 樣式 */
+.mobile_nav.active {
+  display: flex;
+}
+
 .mobile_nav ul {
   list-style: none;
 }
@@ -131,9 +141,9 @@ nav ul li a:hover {
   max-width: 100%; /* 修改 */
   height: auto;
   margin: 0 auto;
-  padding: 20px;
+  padding: 20px 0;
   display: flex;
-  flex-direction: column;
+  flex-direction: column; /* 垂直 */
   justify-content: center;
   align-items: center;
   position: relative;
@@ -186,7 +196,7 @@ nav ul li a:hover {
 }
 
 .underline-img {
-  position: absolute;
+  position: static;
   right: -16px;
   bottom: -2px;
   z-index: -1;
@@ -208,7 +218,7 @@ nav ul li a:hover {
   justify-content: space-between;
   gap: 40px;
 }
-  
+
 .content-block {
   width: 100%;
   max-width: 298px;
@@ -216,7 +226,7 @@ nav ul li a:hover {
   flex-direction: column;
   gap: 8px;
 }
-  
+
 .content-block p {
   margin: 0;
 }
@@ -401,8 +411,10 @@ footer {
 
   .underline-img {
     position: static;
-    display: block;
+    display: inline-block;
     margin-top: 8px;
+    display: flexbox;
+    justify-content: right;
   }
 
   .content-2B2C {
@@ -430,6 +442,7 @@ footer {
     width: 100%;
     max-width: 306px;
   }
+}
 
 @media screen and (min-width: 768px) {
   .container {
@@ -446,3 +459,4 @@ footer {
     display: flex;
     gap: 40px;
   }
+}
