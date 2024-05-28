@@ -77,6 +77,7 @@ nav ul li a:hover {
 .hamburger-menu {
   display: none;
   position: relative;
+  z-index: 11; /* 處理點擊不到關閉圖示 */
 }
 
 .hamburger-menu .close {
