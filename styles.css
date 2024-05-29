@@ -54,23 +54,23 @@ header {
   height: 40px;
 }
 
-nav ul {
+menu ul {
   display: flex;
   align-items: center;
   margin-left: auto;
 }
 
-nav ul li {
+menu ul li {
   margin-left: 40px;
 }
 
-nav ul li a {
+menu ul li a {
   color: #000;
   font-size: 16px;
   transition: color 0.3s ease;
 }
 
-nav ul li a:hover {
+menu ul li a:hover {
   color: #007bff;
 }
 
@@ -84,7 +84,7 @@ nav ul li a:hover {
   display: none;
 }
 
-.mobile_nav {
+.mobile_menu {
   display: none;
   position: fixed;
   top: 0;
@@ -98,24 +98,24 @@ nav ul li a:hover {
   justify-content: center;
 }
 
-.mobile_nav a:hover {
+.mobile_menu a:hover {
   color: #007bff;
 }
 
 /* js用的.active 樣式 */
-.mobile_nav.active {
+.mobile_menu.active {
   display: flex;
 }
 
-.mobile_nav ul {
+.mobile_menu ul {
   list-style: none;
 }
 
-.mobile_nav ul li {
+.mobile_menu ul li {
   margin: 20px 0;
 }
 
-.mobile_nav ul li a {
+.mobile_menu ul li a {
   color: #fff;
   font-size: 24px;
   text-decoration: none;
@@ -125,7 +125,7 @@ nav ul li a:hover {
   display: none;
 }
 
-#menu-toggle:checked ~ .mobile_nav {
+#menu-toggle:checked ~ .mobile_menu {
   display: flex;
 }
 
@@ -304,7 +304,7 @@ footer {
   padding: 80px 312px;
   text-align: center;
   border-top: 1px solid #e0e0e0;
-  background-image: url('img/footer-bg-lg.png'); /* 添加背景圖片 */
+  background-image: url('img/footer-bg-lg.png'); /* 背景圖片 */
   background-size: cover;
   background-position: center;
 }
@@ -379,7 +379,7 @@ footer {
 
 /* RWD */
 @media (max-width: 768px) {
-  nav ul {
+  menu ul {
     display: none;
   }
 
@@ -432,7 +432,7 @@ footer {
 
   footer {
     padding: 40px 20px;
-    background-image: url('img/footer-bg-sm.png'); /* 更換背景圖片 */
+    background-image: url('img/footer-bg-sm.png'); /* 改手機版背景圖片 */
   }
 
   .footer-social {
@@ -456,7 +456,7 @@ footer {
     display: none;
   }
 
-  nav ul {
+  menu ul {
     display: flex;
     gap: 40px;
   }
