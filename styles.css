@@ -77,7 +77,7 @@ menu ul li a:hover {
 .hamburger-menu {
   display: none;
   position: relative;
-  z-index: 11; /* 處理點擊不到關閉圖示 */
+  z-index: 11; /* 試試看處理點擊不到關閉圖示 */
 }
 
 .hamburger-menu .close {
@@ -102,7 +102,7 @@ menu ul li a:hover {
   color: #007bff;
 }
 
-/* js用的.active 樣式 */
+/* for js用的.active 樣式 */
 .mobile_menu.active {
   display: flex;
 }
@@ -357,7 +357,6 @@ footer {
   background-color: #000;
   width: 306px;
   height: 72px;
-  border-radius: 8px 24px;
   border-radius: 8px;
   gap: 8px;
   font-size: 20px;
