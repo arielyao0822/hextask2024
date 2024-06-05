@@ -145,9 +145,9 @@ menu ul li a:hover span::after {
   justify-content: center;
 }
 
-.mobile_menu a:hover {
+/* .mobile_menu a:hover {
   color: #007bff;
-}
+} */
 
 /* for js用的.active 樣式 */
 .mobile_menu.active {
