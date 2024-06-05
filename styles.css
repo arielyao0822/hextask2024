@@ -56,6 +56,7 @@ header {
 
 menu ul {
   display: flex;
+  justify-content: center;
   align-items: center;
   margin-left: auto;
 }
@@ -118,7 +119,7 @@ menu ul li a:hover::before,
 menu ul li a:hover::after,
 menu ul li a:hover span::before,
 menu ul li a:hover span::after {
-  opacity: 1; /* 滑鼠移過去 */
+  opacity: 1; /* 滑鼠移過去效果 */
 }
 
 .hamburger-menu {
